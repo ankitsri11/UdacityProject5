@@ -26,10 +26,20 @@ source ~/.devops/bin/activate
 
 ## Application `app.py` running:
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Upload docker image: `./upload_docker.sh`
+1. Standalone:  Application can be locally run using the following command.
 
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+`python app.py`
 
-#### Note: Please make sure run `minikube start` before your execute run_kubernetes.sh script
+2. Run in Docker:  Use below script to run the application inside docker container.
+
+`./run_docker.sh`
+
+3. Upload docker image: Use below script to upload image to docker hub.
+
+`./upload_docker.sh`
+
+4. Run in Kubernetes:  Use below script to start Kubernetes pod and start the application inside the container.
+
+`./run_kubernetes.sh`
+
+#### Note: Please make sure to run `minikube start` before your execute run_kubernetes.sh script
