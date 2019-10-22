@@ -18,13 +18,13 @@ source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
-* Note: Ensure below packages are install before you proceed further.
+### Note: Ensure below packages are install before you proceed further.
 
   - Docker
   - Hadolint
   - Kubernetes (Minikube)
 
-### Application `app.py` running:
+## Application `app.py` running:
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
