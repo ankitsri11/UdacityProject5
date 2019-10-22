@@ -1,0 +1,30 @@
+~/Documents/Udacity/UdacityProject5(master*) » ./run_kubernetes.sh
+pod/udacityproject created
+
+NAME             READY   STATUS              RESTARTS   AGE
+udacityproject   0/1     ContainerCreating   0          0s
+
+waiting for pod to run
+waiting for pod to run
+waiting for pod to run
+waiting for pod to run
+waiting for pod to run
+waiting for pod to run
+
+NAME             READY   STATUS    RESTARTS   AGE
+udacityproject   1/1     Running   0          61s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+[2019-10-22 00:42:49,996] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2019-10-22 00:42:50,016] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-10-22 00:42:50,025] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-10-22 00:42:50,029] INFO in app: output prediction:
+[20.35373177134412]
+127.0.0.1 - - [22/Oct/2019 00:42:50] "POST /predict HTTP/1.1" 200 -
