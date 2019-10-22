@@ -1,6 +1,6 @@
 <include a CircleCI status badge, here>
 
-### Operationalize a Machine Learning Microservice API
+# Operationalize a Machine Learning Microservice API
 
 ## Environment setup
 
@@ -18,7 +18,7 @@ source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
-### Note: Ensure below packages are install before you proceed further.
+#### Note: Ensure below packages are install before you proceed further.
 
   - Docker
   - Hadolint
@@ -32,4 +32,4 @@ source ~/.devops/bin/activate
 
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-* Note: Please make sure run `minikube start` before your execute run_kubernetes.sh script
+#### Note: Please make sure run `minikube start` before your execute run_kubernetes.sh script
